@@ -1,0 +1,74 @@
+<html><head>
+
+	<title>AI Object Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script><style type="text/css" data-glamor=""></style>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+<style type="text/css">
+@font-face {
+  font-weight: 400;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 500;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Medium-d74eac43c78bd5852478998ce63dceb3.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 700;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Bold-83b8ceaf77f49c7cffa44107561909e4.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 900;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2') format('woff2');
+}</style></head>
+
+<body>
+<center>
+<h3 class="btn btn-success heading">AI Object Finder
+  <br>
+  <span>The input name which you will give should match the names 
+    present in CoCo model than only it will detect
+  </span>
+</h3>
+<br><br>
+<button class="btn btn-primary" onclick="start()" id="start">Start</button>
+<br><br>
+<h4>Object Name:
+  <br><br>
+  <input type="text" id="object_name">
+</h4>
+<h3 id="status" class="btn btn-primary">Status: Detecting Objects</h3>
+<h3 id="number_of_objects" class="btn btn-success"></h3>
+</center>
+
+<div class="copy_right_footer">
+  Made by Aahwan Hazari
+</div>
+
+<script src="main.js"></script>
+
+
+
+<canvas id="defaultCanvas0" class="p5Canvas" width="960" height="760" style="width: 480px; height: 380px; position: absolute; left: 364px; top: 95.5px;"></canvas><video playsinline="" crossorigin="anonymous" width="640" height="480" style="display: none;"></video></body><loom-container id="lo-engage-ext-container"><loom-shadow classname="resolved"></loom-shadow></loom-container><loom-container id="lo-companion-container"><loom-shadow classname="resolved"></loom-shadow></loom-container></html>
